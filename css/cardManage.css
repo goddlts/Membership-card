@@ -1,0 +1,42 @@
+.cardNo{
+    font-weight: 800;
+}
+.phoneNo{
+    background-color: #f0f0f0;
+    border-radius: 3px;
+    color: #959595;
+    width: 156px;
+    padding: 11px 37px 11px 11px;
+    font-size: 16px;
+}
+.card-balance{
+    color: #d9534f;
+}
+.recharge-group{
+    display: inline-block;
+    vertical-align: middle;
+}
+.recharge-group .item {
+    width: 60px;
+    height: 28px;
+    border: 1px solid #ededed;
+    float: left;
+    line-height: 28px;
+    text-align: center;
+    font-size: 18px;
+    color: #7cbf1d;
+    margin-right: 4px;
+    cursor: pointer;
+}
+.recharge-group .item.active {
+    background: #FFF url(../images/checked_now.png) no-repeat bottom right;
+    border: 1px solid #d43f3a;
+}
+.lock-desc{
+    max-width: 396px;
+    min-height: 90px;
+    margin-bottom: 4px;
+}
+.vip-number{
+    font-size: 18px;
+}

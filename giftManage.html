@@ -1,0 +1,473 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1260px">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>卡片管理</title>
+    <link rel="stylesheet" href="js/plug-in/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font/icon/font-awesome.min.css" />
+    <link href="css/business/home/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common/common.css">
+    <link rel="stylesheet" href="css/cardCommon.css">
+    <link rel="stylesheet" href="css/cardManage.css">
+</head>
+
+<body>   
+    <div class="container-fluid container-my">
+        <div class="center-panel row" id="center_panel">
+            <div class="pull-left creditCard">
+                <div class="container-fluid">
+                    <div class="row row-title">卡片管理</div>                    
+                    <div class="rowBox">
+                        <div class="row cards-type clearfix">
+                            <div class="card-list clearfix">
+                                <div class="card-item card-bg1">
+                                    <div class="card-type mincard-1">
+                                        <div class="mincard"></div>
+                                    </div>
+                                    <div class="card-name">储值卡</div>
+                                </div> 
+                                <div class="card-item card-bg2">
+                                    <div class="card-type mincard-2">
+                                        <div class="mincard"></div>
+                                    </div>
+                                    <div class="card-name">礼品卡</div>
+                                </div>     
+                                <div class="card-item card-bg2">
+                                    <div class="card-type mincard-2">
+                                        <div class="mincard"></div>
+                                    </div>
+                                    <div class="card-name">积分卡</div>
+                                </div>     
+                                <div class="card-item card-bg2">
+                                    <div class="card-type mincard-2">
+                                        <div class="mincard"></div>
+                                    </div>
+                                    <div class="card-name">计次卡</div>
+                                </div>     
+                                <div class="card-item card-bg2">
+                                    <div class="card-type mincard-2">
+                                        <div class="mincard"></div>
+                                    </div>
+                                    <div class="card-name">权益升级卡</div>
+                                </div>     
+                                <div class="card-item card-bg2">
+                                    <div class="card-type mincard-2">
+                                        <div class="mincard"></div>
+                                    </div>
+                                    <div class="card-name">固定权益卡</div>
+                                </div>  
+                            </div>
+                            <div class="card-all">
+                                <div class="card-type mincard-3">
+                                    <div class="mincard"></div>
+                                </div>
+                                <div class="card-name">全部</div>
+                            </div> 
+                        </div>
+                        <div class="row search">
+                            <div class="form-inline">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="会员手机号"/>
+                                </div>
+                                <div class="form-group">
+                                    <label>领卡时间：</label>
+                                    <input type="text" class="form-control" placeholder="开始时间"/>
+                                    <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                                    <input type="text" class="form-control" placeholder="结束时间"/>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option>卡状态</option>
+                                        <option>锁定</option>
+                                        <option>作废</option>
+                                        <option>正常</option>
+                                    </select>
+                                </div>                                
+                                <button class="btn btn-danger">查询</button>
+                            </div> 
+                        </div> 
+                        <div class="row row-table">
+                            <table class="table common-table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th>会员卡号</th>
+                                        <th>会员信息</th>
+                                        <th>卡片名称</th>
+                                        <th>领卡时间</th>
+                                        <th>领卡来源</th>
+                                        <th>卡余额</th>
+                                        <th>总充值额</th>
+                                        <th>状态</th>
+                                        <th>操作</th>
+                                    </tr> 
+                                    <tr>
+                                        <td>800 900 1276</td>
+                                        <td>
+                                            <div class="member">
+                                                <div class="vip-info">
+                                                    15818000009
+                                                </div>
+                                                <div class="vip-details">
+                                                    <div class="nickname">会员昵称：西门吹雪</div>
+                                                    <div class="sex">性别：男</div>
+                                                    <div class="birthday">会员生日：2016-08-12</div>
+                                                    <div class="birthplace">会员籍贯：广东 深圳</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>悠悠卡</td>
+                                        <td>2016-08-12 12:12</td>
+                                        <td>公众号</td>
+                                        <td>320.52</td>
+                                        <td>852253.36</td>
+                                        <td>
+                                            <div class="status">
+                                                <div class="text-success locked">锁定</div>
+                                                <div class="lock-cause">
+                                                    锁定状态显示锁定原因
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-link lock">锁定</button>
+                                            <button class="btn btn-link text-error recharge">充值</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>800 900 1276</td>
+                                        <td>
+                                            <div class="member">
+                                                <div class="vip-info">
+                                                    15818000009
+                                                </div>
+                                                <div class="vip-details">
+                                                    <div class="nickname">会员昵称：西门吹雪</div>
+                                                    <div class="sex">性别：男</div>
+                                                    <div class="birthday">会员生日：2016-08-12</div>
+                                                    <div class="birthplace">会员籍贯：广东 深圳</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>悠悠卡</td>
+                                        <td>2016-08-12 12:12</td>
+                                        <td>公众号</td>
+                                        <td>320.52</td>
+                                        <td>852253.36</td>
+                                        <td>
+                                            <div class="status">
+                                                <div class="text-success locked">锁定</div>
+                                                <div class="lock-cause">
+                                                    锁定状态显示锁定原因
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-link lock">锁定</button>
+                                            <button class="btn btn-link text-error recharge">充值</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>800 900 1276</td>
+                                        <td>
+                                            <div class="member">
+                                                <div class="vip-info">
+                                                    15818000009
+                                                </div>
+                                                <div class="vip-details">
+                                                    <div class="nickname">会员昵称：西门吹雪</div>
+                                                    <div class="sex">性别：男</div>
+                                                    <div class="birthday">会员生日：2016-08-12</div>
+                                                    <div class="birthplace">会员籍贯：广东 深圳</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>悠悠卡</td>
+                                        <td>2016-08-12 12:12</td>
+                                        <td>公众号</td>
+                                        <td>320.52</td>
+                                        <td>852253.36</td>
+                                        <td>
+                                            <div class="status">
+                                                <div class="text-success locked">锁定</div>
+                                                <div class="lock-cause">
+                                                    锁定状态显示锁定原因
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-link lock">锁定</button>
+                                            <button class="btn btn-link text-error recharge">充值</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>800 900 1276</td>
+                                        <td>
+                                            <div class="member">
+                                                <div class="vip-info">
+                                                    15818000009
+                                                </div>
+                                                <div class="vip-details">
+                                                    <div class="nickname">会员昵称：西门吹雪</div>
+                                                    <div class="sex">性别：男</div>
+                                                    <div class="birthday">会员生日：2016-08-12</div>
+                                                    <div class="birthplace">会员籍贯：广东 深圳</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>悠悠卡</td>
+                                        <td>2016-08-12 12:12</td>
+                                        <td>公众号</td>
+                                        <td>320.52</td>
+                                        <td>852253.36</td>
+                                        <td>
+                                            <div class="status">
+                                                <div class="text-success locked">锁定</div>
+                                                <div class="lock-cause">
+                                                    锁定状态显示锁定原因
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-link lock">锁定</button>
+                                            <button class="btn btn-link text-error recharge">充值</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>800 900 1276</td>
+                                        <td>
+                                            <div class="member">
+                                                <div class="vip-info">
+                                                    15818000009
+                                                </div>
+                                                <div class="vip-details">
+                                                    <div class="nickname">会员昵称：西门吹雪</div>
+                                                    <div class="sex">性别：男</div>
+                                                    <div class="birthday">会员生日：2016-08-12</div>
+                                                    <div class="birthplace">会员籍贯：广东 深圳</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>悠悠卡</td>
+                                        <td>2016-08-12 12:12</td>
+                                        <td>公众号</td>
+                                        <td>320.52</td>
+                                        <td>852253.36</td>
+                                        <td>
+                                            <div class="status">
+                                                <div class="text-success locked">锁定</div>
+                                                <div class="lock-cause">
+                                                    锁定状态显示锁定原因
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-link lock">锁定</button>
+                                            <button class="btn btn-link text-error recharge">充值</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>800 900 1276</td>
+                                        <td>
+                                            <div class="member">
+                                                <div class="vip-info">
+                                                    15818000009
+                                                </div>
+                                                <div class="vip-details">
+                                                    <div class="nickname">会员昵称：西门吹雪</div>
+                                                    <div class="sex">性别：男</div>
+                                                    <div class="birthday">会员生日：2016-08-12</div>
+                                                    <div class="birthplace">会员籍贯：广东 深圳</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>悠悠卡</td>
+                                        <td>2016-08-12 12:12</td>
+                                        <td>公众号</td>
+                                        <td>320.52</td>
+                                        <td>852253.36</td>
+                                        <td>
+                                            <div class="status">
+                                                <div class="text-success locked">锁定</div>
+                                                <div class="lock-cause">
+                                                    锁定状态显示锁定原因
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-link lock">锁定</button>
+                                            <button class="btn btn-link text-error recharge">充值</button>
+                                        </td>
+                                    </tr>                            
+                                </tbody>
+                            </table>
+                           <div class="col-sm-12 col-table-page">
+                                <nav>
+                                    <ul class="pagination  ">
+                                        <li><a class="firstPage" href="#">首页</a></li>
+                                        <li><a class="prevPage" href="#">上一页</a></li>
+                                        <li class="active"><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a class="nextPage" href="#">下一页</a></li>
+                                        <li><a class="lastPage" href="#">末页</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>  
+            <div class="col-left col-left-bg"></div>
+            <div class="col-left pull-left col-left-content">              
+                <div class="menu list-1">
+                    <div class="title vip-title">
+                        <span class="credit-card-icon"></span>
+                        <span>会员卡</span>
+                        <span class="info-icon"></span>
+                        <div class="vip-desc">
+                            <h2>会员卡玩法</h2>
+                            <ol>
+                                <li>储值卡（支持储值分层赠送与根据储值金额匹配、折扣权益二种营销方式）</li>
+                                <li>礼品卡</li>
+                                <li>积分卡（积印花、积分）</li>
+                                <li>次数卡（可自定义卡片的服务项目）</li>
+                                <li>权益升级卡（同于星巴克会员卡模式）</li>
+                                <li>固定权益卡（如五折卡）</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="menu-conent">
+                        <ul id="accordion5" class="accordion">
+                            <li>
+                                <div class="link" name="" src="">
+                                    <i class="fa fa-cog"></i>基础管理<i class="fa fa-chevron-down icon-right"></i>
+                                </div>
+                                <ul class="submenu" style="display: none;">
+                                    <!-- <li><span name="">卡片制作</span></li>
+                                    <li><span name="">卡片推广</span></li>
+                                    <li><span name="">卡片管理</span></li>
+                                    <li><span name="">卡使用记录</span></li>
+                                    <li><span name="">历史发卡</span></li> -->
+                                    <li><a href="createCard.html">卡片制作</a></li>
+                                    <li><a href="cardSpread.html">卡片推广</a></li>
+                                    <li><a href="cardManage.html">卡片管理</a></li>
+                                    <li><a href="cardUsedRecord.html">卡使用记录</a></li>
+                                    <li><a href="cardHistoryRecord.html">历史发卡</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="link" name="" src="">
+                                    <i class="fa fa-gift"></i>礼品管理<i class="fa fa-chevron-down icon-right"></i>
+                                </div>                                
+                            </li>
+                            <li>
+                                <div class="link" name="" src="">
+                                    <i class="fa fa-cogs"></i>跨点设置<i class="fa fa-chevron-down icon-right"></i>
+                                </div>                                
+                            </li>
+                            <li>
+                                <div class="link" name="" src="">
+                                    <i class="fa fa-paw"></i>活动配置<i class="fa fa-chevron-down icon-right"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="link" name="" src="">
+                                    <i class="fa fa-bar-chart"></i>数据报表<i class="fa fa-chevron-down icon-right"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>                     
+        </div>        
+    </div> 
+    <div class="modal fade modal-lock">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">锁定</h4>
+          </div>
+          <div class="modal-body">
+              <div class="form-group text-center vip-number">
+                  <label>会员卡号：</label>
+                  <span class="cardNo">800 900 1276</span>
+              </div>
+              <div class="form-group">
+                  <textarea class="form-control lock-desc" placeholder="卡片锁定原因"></textarea>
+              </div>
+              <button type="button" class="btn btn-primary">确认充值</button>
+          </div>          
+        </div>
+      </div>
+    </div>
+    <div class="modal fade modal-recharge">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">充值</h4>
+          </div>
+          <div class="modal-body">
+              <div class="form-group">
+                  <label>会员卡号：</label>
+                  <span class="cardNo">800 900 1276</span>
+              </div>
+              <div class="form-group">
+                  <label>手机号：</label>
+                  <span class="phoneNo">158000000000</span>
+              </div>
+              <div class="form-group">
+                  <label>卡余额：</label>
+                  <span class="card-balance">320.86</span>
+              </div>
+              <div class="form-group">
+                  <label>充值金额：</label>
+                  <div class="recharge-group">
+                      <div class="item active">100</div>
+                      <div class="item">200</div>
+                      <div class="item">500</div>
+                      <div class="item">1000</div>
+                  </div>
+              </div>
+              <button type="button" class="btn btn-danger">确认充值</button>
+          </div>          
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/common/jquery-1.11.3.min.js"></script>    
+    <script src="js/plug-in/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('.vip-title').hover(function(){
+                $('.vip-desc').toggleClass('show');
+            });
+            $('.member').hover(function(){
+                $(this).find('.vip-details').toggleClass('show');
+            });
+            $('.status').hover(function(){
+                $(this).find('.lock-cause').toggleClass('show');
+            });   
+            $('.lock').click(function(){
+                $('.modal-lock').modal();
+            });    
+            $('.recharge').click(function(){
+                $('.modal-recharge').modal();
+            });      
+        });       
+
+        </script>
+    <script type="text/javascript" src="js/common/common.js"></script>
+    <script type="text/javascript" src="js/business/home/index.js"></script>
+    
+</body>
+
+</html>

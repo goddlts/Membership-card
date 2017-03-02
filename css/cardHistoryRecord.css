@@ -1,0 +1,99 @@
+.modal-benefit .modal-body{
+    background: url(../images/curve.png) 76px 69px no-repeat;
+    height: 225px;
+}
+.view-level{
+    position: relative;
+}
+.view-level > div{
+    position: absolute;
+}
+.level-1 .vip-img,.level-2 .vip-img{    
+    width: 51px;
+    height: 51px;
+}
+.level-1 .vip-img{    
+    background: url(../images/vip_1.png) 0 0 no-repeat;
+}
+.level-2 .vip-img{    
+    background: url(../images/vip_2.png) 0 0 no-repeat;
+}
+.level-3 .vip-img{
+    width: 52px;
+    height: 52px;
+    background: url(../images/vip_3.png) 0 0 no-repeat;
+}
+.level-4 .vip-img{
+    width: 63px;
+    height: 63px;
+    background: url(../images/vip_4.png) 0 0 no-repeat;
+}
+.level-1{
+    top: 131px;
+    left: 8px;
+}
+.level-2{
+    top: 115px;
+    left: 113px;
+}
+.level-3{
+    top: 87px;
+    left: 214px;
+}
+.level-4{
+    top: 16px;
+    left: 311px;
+}
+.vip-tips{
+    color: #5cb85c;
+    position: absolute;    
+    font-size: 12px
+}
+.level-1 .vip-tips{
+    top: -51px;
+    width: 114px;
+    left: -28px;
+}
+.level-1 .vip-tips .send{
+    margin-left: 23px;
+}
+.level-1 .vip-tips .caret{
+    margin-left: 49px;
+}
+.level-2 .vip-tips{
+    top: 51px;
+    width: 130px;
+    left: -32px;
+}
+.level-2 .vip-tips .send{
+    margin-left: 40px;
+}
+.level-2 .vip-tips .caret{
+    margin-left: 54px;    
+}
+.level-2 .vip-tips .caret,.level-4 .vip-tips .caret{
+    border-top: 0;
+    border-bottom: 4px solid;
+}
+.level-3 .vip-tips{
+    top: -52px;
+    width: 137px;
+    left: -54px;
+}
+.level-3 .vip-tips .send{
+    margin-left: 39px;
+}
+.level-3 .vip-tips .caret{
+    margin-left: 75px;
+}
+.level-4 .vip-tips{
+    top: 63px;
+    width: 145px;
+    left: -32px;
+}
+.level-4 .vip-tips .send{
+    margin-left: 46px;
+}
+.level-4 .vip-tips .caret{
+    margin-left: 60px;
+}

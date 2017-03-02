@@ -1,0 +1,293 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1260px">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>兑换管理</title>
+    <link rel="stylesheet" href="../../js/plug-in/bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../font/icon/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../../js/plug-in/datetimepicker/jquery.datetimepicker.css"/>
+    <link rel="stylesheet" href="../../css/business/home/index.css"/>
+    <link rel="stylesheet" href="../../css/common/common.css"/>
+    <link rel="stylesheet" href="../../css/cardCommon.css"/>
+    <link rel="stylesheet" href="../../css/gift/giftCommon.css"/>
+</head>
+
+<body>   
+    <div class="container-fluid container-my">
+        <div class="center-panel row" id="center_panel">
+            <div class="pull-left creditCard">
+                <div class="container-fluid">
+                    <div class="row row-title">兑换管理</div>                    
+                    <div class="rowBox">
+                        <div class="row search">
+                            <div class="form-inline">
+                                <div class="form-group marginRight10">
+                                    <input  type="text" class="form-control" placeholder="兑换订单号" style="width:126px" />
+                                </div>
+                                <div class="form-group marginRight10">
+                                    <input type="text" class="form-control" placeholder="兑换卡号" style="width:126px"/>
+                                </div>
+                                <div class="form-group marginRight10">
+                                    <input type="text" class="form-control datepicker" placeholder="开始时间" id="dateStrartTime" readonly="readonly" style="width:166px"/>
+                                    <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                                    <input type="text" class="form-control datepicker" placeholder="结束时间" id="dateEndTime" readonly="readonly" style="width:166px"/>
+                                </div> 
+                                <div class="form-group ">
+                                    <select class="form-control marginRight10">
+                                        <option>状态</option>
+                                        <option>已上架</option>
+                                        <option>暂存</option>
+                                        <option>已下架</option>
+                                    </select>
+                                </div>                                
+                                <button class="btn btn-warning gift-search">查询</button>
+                                <button class="btn btn-success gift-btn">导出</button>
+                            </div> 
+                        </div> 
+                        <div class="row row-table">
+                            <table class="table common-table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th>兑换订单号</th>
+                                        <th>礼品名称</th>
+                                        <th>兑换数量</th>
+                                        <th>兑换积分</th>
+                                        <th>兑换卡号</th>
+                                        <th>兑换会员</th>
+                                        <th>状态</th>
+                                        <th>兑换时间</th>
+                                        <th>承兑商户</th>
+                                        <th>操作</th>
+                                    </tr> 
+                                    <tr>
+                                        <td>20161125175700</td>
+                                        <td>史努比套装</td>
+                                        <td>100</td>
+                                        <td>300</td>
+                                        <td> 
+                                            <div class="member">
+                                                <div class="exchangeNum">
+                                                    4002005888
+                                                </div>
+                                                <div class="gift-details">
+                                                    <div class="nicknum">会员卡号：4002000800</div>
+                                                    <div class="cardtype">卡类型：储值卡</div>
+                                                    <div class="nickname">卡名称：尊享超级会员卡</div>
+                                                    <div class="nickdate">失效日期：2016-11-25</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                        <div class="status">
+                                            <div class="giftNum">
+                                                15000000000
+                                            </div>
+                                            <div class="gift-cause">
+                                                <div class="nickname">兑换人姓名：胡八一</div>
+                                                <div class="nickphone">兑换人手机号：15866861863</div>
+                                                <div class="nickaddr">兑换人地址：</div>
+                                                <div class="nickaddr">广东省深圳市南山区高新南七道 数字技术园A3栋</div>
+                                            </div>
+                                        </div>
+                                        </td>
+                                        <td class="col-red">成功</td>
+                                        <td>
+                                            2016-11-25<br/>16:55
+                                        </td>
+                                         <td>聚诚优品<br/>(科技园店)</td>
+                                        <td>
+                                            <button class="btn btn-link deliver-goods">发货</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>20161125175700</td>
+                                        <td>史努比套装</td>
+                                        <td>100</td>
+                                        <td>300</td>
+                                        <td> 
+                                            <div class="member">
+                                                <div class="exchangeNum">
+                                                    4002005888
+                                                </div>
+                                                <div class="gift-details">
+                                                    <div class="nicknum">会员卡号：4002000800</div>
+                                                    <div class="cardtype">卡类型：储值卡</div>
+                                                    <div class="nickname">卡名称：尊享超级会员卡</div>
+                                                    <div class="nickdate">失效日期：2016-11-25</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                        <div class="status">
+                                            <div class="giftNum">
+                                                15000000000
+                                            </div>
+                                            <div class="gift-cause">
+                                                <div class="nickname">兑换人姓名：胡八一</div>
+                                                <div class="nickphone">兑换人手机号：15866861863</div>
+                                                <div class="nickaddr">兑换人地址：</div>
+                                                <div class="nickaddr">广东省深圳市南山区高新南七道 数字技术园A3栋</div>
+                                            </div>
+                                        </div>
+                                        </td>
+                                        <td class="col-red">成功</td>
+                                        <td>
+                                            2016-11-25<br/>16:55
+                                        </td>
+                                         <td>聚诚优品<br/>(科技园店)</td>
+                                        <td>
+                                            <div class="finshed">
+                                            <div class="gift-finshed">
+                                                已发货
+                                            </div>
+                                            <div class="gift-finshedNum">
+                                                <div class="nickname">兑换人姓名：胡八一</div>
+                                            </div>
+                                            </div>
+                                        </td>
+                                    </tr>                                                            
+                                </tbody>
+                            </table>
+                           <div class="col-sm-12 col-table-page">
+                                <nav>
+                                    <ul class="pagination  ">
+                                        <li><a class="firstPage" href="#">首页</a></li>
+                                        <li><a class="prevPage" href="#">上一页</a></li>
+                                        <li class="active"><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a class="nextPage" href="#">下一页</a></li>
+                                        <li><a class="lastPage" href="#">末页</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>  
+            <div class="col-left col-left-bg"></div>
+            <div class="col-left pull-left col-left-content">              
+                <div class="menu list-1">
+                    <div class="title vip-title">
+                        <span class="credit-card-icon"></span>
+                        <span>会员卡</span>
+                        <span class="info-icon"></span>
+                        <div class="vip-desc">
+                            <h2>会员卡玩法</h2>
+                            <ol>
+                                <li>储值卡（支持储值分层赠送与根据储值金额匹配、折扣权益二种营销方式）</li>
+                                <li>礼品卡</li>
+                                <li>积分卡（积印花、积分）</li>
+                                <li>次数卡（可自定义卡片的服务项目）</li>
+                                <li>权益升级卡（同于星巴克会员卡模式）</li>
+                                <li>固定权益卡（如五折卡）</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="menu-conent">
+                        <ul id="accordion5" class="accordion">
+                            <li>
+                                <div class="link" name="" src="">
+                                    <i class="fa fa-cog"></i>基础管理<i class="fa fa-chevron-down icon-right"></i>
+                                </div>
+                                <ul class="submenu" style="display:none">
+                                    <li onclick="window.location.href='/login!index.do'"><a>卡片制作</a></li>
+                                    <li onclick="window.location.href='/card!memberCardSpread.do'"><a>卡片推广</a></li>
+                                    <li onclick="window.location.href='/card!memberCardManageInfo.do'"><a>卡片管理</a></li>
+                                    <li onclick="window.location.href='/card!cardUsedRecord.do'"><a>卡使用记录</a></li>
+                                    <li onclick="window.location.href='/card!historicalHairpin.do'"><a>历史发卡</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="link" name="" src="">
+                                    <i class="fa fa-gift"></i>礼品管理<i class="fa fa-chevron-down icon-right"></i>
+                                </div>
+                                <ul class="submenu">
+                                    <li onclick="window.location.href='giftManage.html'"><a>礼品管理</a></li>
+                                    <li class="createCard-active" onclick="window.location.href='exchangeManage.html'"><a>兑换管理</a></li>
+                                    <li onclick="window.location.href='manualExchange.html'"><a>人工兑换</a></li>
+                                </ul>                                
+                            </li>
+                            <li>
+                                <div class="link" name="" src="">
+                                    <i class="fa fa-cogs"></i>跨点设置<i class="fa fa-chevron-down icon-right"></i>
+                                </div>                                
+                            </li>
+                            <li>
+                                <div class="link" name="" src="">
+                                    <i class="fa fa-paw"></i>活动配置<i class="fa fa-chevron-down icon-right"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="link" name="" src="">
+                                    <i class="fa fa-bar-chart"></i>数据报表<i class="fa fa-chevron-down icon-right"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>                     
+        </div>        
+    </div>
+    <div class="modal fade modal-deliver" id="modal-deliver-close">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">发货</h4>
+          </div>
+          <div class="modal-body text-center">
+              <div class="deliver-title">
+                  运单号：<input  type="text" class="form-control" placeholder="输入运单号" style="display: inline-block;width:250px" />
+              </div>
+              <div class="form-group">
+                  <button class="btn btn-warning" style="width:120px;font-size:14px">确认发货</button>
+              </div>
+          </div>          
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="../../js/common/jquery-1.11.3.min.js"></script>   
+    <script type="text/javascript" src="../../js/plug-in/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../js/common/common.js"></script>
+    <script type="text/javascript" src="../../js/business/home/index.js"></script>
+    <script type="text/javascript" src="../../js/plug-in/datetimepicker/jquery.datetimepicker.js"></script>
+    <script type="text/javascript" src="../../js/plug-in/page/page.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('.datepicker').datetimepicker({
+                lang:'ch',//中文化
+                format:'Y-m-d H:i:s',
+                allowTimes:[
+                    '00:00','01:00','02:00','03:00','04:00','05:00',
+                    '06:00','07:00','08:00','09:00','10:00','11:00',
+                    '12:00','13:00','14:00','15:00','16:00','17:00',
+                    '18:00','19:00','20:00','21:00','22:00','23:00',]
+
+            });
+            $('.vip-title').hover(function(){
+                $('.vip-desc').toggleClass('show');
+            });
+            $('.member').hover(function(){
+                $(this).find('.gift-details').toggleClass('show');
+            });
+            $('.status').hover(function(){
+                $(this).find('.gift-cause').toggleClass('show');
+            });  
+            $('.finshed').hover(function(){
+                $(this).find('.gift-finshedNum').toggleClass('show');
+            });    
+            $('.deliver-goods').click(function(){
+                $('.modal-deliver').modal();
+            });         
+        });       
+        </script>    
+</body>
+
+</html>

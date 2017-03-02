@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1260px">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>礼品管理</title>
+    <link rel="stylesheet" href="../../js/plug-in/bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../font/icon/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../../js/plug-in/datetimepicker/jquery.datetimepicker.css"/>
+    <link rel='stylesheet' href='../../css/upload/webuploader.css'/>
+    <link rel="stylesheet" href="../../css/business/home/index.css"/>
+    <link rel="stylesheet" href="../../css/common/common.css"/>
+    <link rel="stylesheet" href="../../css/cardCommon.css"/>
+    <link rel="stylesheet" href="../../css/gift/giftCommon.css"/>
+</head>
+
+<body>   
+    <div class="container-fluid container-my">
+        <div class="center-panel row" id="center_panel">
+            <div class="pull-left creditCard">
+                <div class="container-fluid">
+                    <div class="row row-title">礼品管理<span class="title-msg">小贴士：礼品可以用作会员卡的积分兑换，也可以用作平时营销活动</span></div>                    
+                   <div class="cardBox">
+                       <div class="card-list">
+                           <div class="row clearfix row-create">
+                               <div class="gift-setting pull-left">
+                                   <div class="basic">
+                                       <h3>基础信息</h3>
+                                       <div class="setBox">
+                                           <div class="clearfix">
+                                               <div class="setLabel pull-left">
+                                                   礼品名称
+                                               </div>
+                                               <div class="setInfo pull-left">
+                                                   <input type="text" class="form-control input-1" placeholder="超值圣诞节 超值 卡哇伊 蒙奇奇精装">
+                                               </div>
+                                           </div>
+                                           <div class="clearfix">
+                                               <div class="setLabel pull-left">
+                                                   礼品slogan
+                                               </div>
+                                               <div class="setInfo pull-left">
+                                                   <input type="text" class="form-control input-1" placeholder="为你而变 好吃天天吃">
+                                               </div>
+                                           </div>
+                                           <div class="clearfix">
+                                               <div class="setLabel pull-left pdt1">
+                                                   礼品用途
+                                               </div>
+                                               <div class="setInfo pull-left">
+                                                   <div class="radio">
+                                                       <label class="radio-inline radio-first">
+                                                           <input type="radio" name="giftuse" value="option1">积分兑换
+                                                       </label>
+                                                       <label class="radio-inline">
+                                                           <input type="radio" name="giftuse" value="option2" checked="checked">附属赠礼
+                                                       </label>
+                                                       <span class="set-tips">附属赠礼不会显示在兑换列表中，只能用作内部活动礼品赠送。如储值卡充值赠礼</span>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <div class="clearfix">
+                                               <div class="setLabel pull-left pdt1">
+                                                   礼品类型
+                                               </div>
+                                               <div class="setInfo pull-left">
+                                                   <div class="radio">
+                                                       <label class="radio-inline radio-first">
+                                                           <input type="radio" name="gifttype" value="option1">实体物品
+                                                       </label>
+                                                       <label class="radio-inline">
+                                                           <input type="radio" name="gifttype" value="option2" checked="checked">虚拟物品
+                                                       </label>
+                                                       <span class="set-tips">实体物品线下领取与邮寄，虚拟物品直接线上领取使用</span>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <div class="clearfix">
+                                               <div class="setLabel pull-left">
+                                                   礼品市场价
+                                               </div>
+                                               <div class="setInfo pull-left">
+                                                   <input type="text" class="form-control input-2 inline-block" placeholder="市场售卖价">
+                                               </div>
+                                           </div>
+                                           <div class="clearfix">
+                                               <div class="setLabel pull-left">
+                                                   礼品数量
+                                               </div>
+                                               <div class="setInfo pull-left">
+                                                   <input type="text" class="form-control input-2 inline-block" placeholder="9999">
+                                               </div>
+                                           </div>
+                                           <div class="clearfix">
+                                               <div class="setLabel pull-left">
+                                                   所需积分数
+                                               </div>
+                                               <div class="setInfo pull-left">
+                                                   <input type="text" class="form-control input-2 inline-block" placeholder="兑换积分数">
+                                               </div>
+                                           </div>     
+                                       </div>
+                                   </div>
+                                   <div class="privilege">
+                                       <h3>图片信息<span class="img-msg">建议图片尺寸368*246</span></h3>
+                                       <div class="setBox">
+                                           <div class="clearfix">
+                                            <div class="giftImg">
+                                                    <div class="btn btn-success">上传图片</div>
+                                            </div>                                               
+                                            <div class="giftImg">
+                                                    <img src="../../images/gift/gift-img.jpg" alt="" style="width:100%;height:100%;vertical-align:initial">
+                                            </div>
+                                            <div class="giftImg">
+                                                    <div class="btn btn-success">上传图片</div>
+                                            </div>  
+                                            <div class="giftImg">
+                                                    <div class="btn btn-success">上传图片</div>
+                                            </div>  
+                                            <div class="giftImg">
+                                                    <div class="btn btn-success">上传图片</div>
+                                            </div>  
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="others">
+                                       <h3>礼品详情</h3>
+                                       <div class="setBox">
+                                           <div class="clearfix">
+                                                <textarea id="editor_id" name="content" style="width:846px;height:150px;">
+
+                                                </textarea>                      
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="save text-center">
+                                       <!-- <button class="btn btn-orange">保存并预览</button> -->
+                                       <a class="btn btn-orange" href="creditCard.html">保存并预览</a>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                </div>
+            </div>  
+            <div class="col-left col-left-bg"></div>
+            <div class="col-left pull-left col-left-content">              
+                <div class="menu list-1">
+                    <div class="title vip-title">
+                        <span class="credit-card-icon"></span>
+                        <span>会员卡</span>
+                        <span class="info-icon"></span>
+                        <div class="vip-desc">
+                            <h2>会员卡玩法</h2>
+                            <ol>
+                                <li>储值卡（支持储值分层赠送与根据储值金额匹配、折扣权益二种营销方式）</li>
+                                <li>礼品卡</li>
+                                <li>积分卡（积印花、积分）</li>
+                                <li>次数卡（可自定义卡片的服务项目）</li>
+                                <li>权益升级卡（同于星巴克会员卡模式）</li>
+                                <li>固定权益卡（如五折卡）</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="menu-conent">
+                        <ul id="accordion5" class="accordion">
+                            <li>
+                                <div class="link" name="" src="">
+                                    <i class="fa fa-cog"></i>基础管理<i class="fa fa-chevron-down icon-right"></i>
+                                </div>
+                                <ul class="submenu" style="display:none">
+                                    <li onclick="window.location.href='/login!index.do'"><a>卡片制作</a></li>
+                                    <li onclick="window.location.href='/card!memberCardSpread.do'"><a>卡片推广</a></li>
+                                    <li onclick="window.location.href='/card!memberCardManageInfo.do'"><a>卡片管理</a></li>
+                                    <li onclick="window.location.href='/card!cardUsedRecord.do'"><a>卡使用记录</a></li>
+                                    <li onclick="window.location.href='/card!historicalHairpin.do'"><a>历史发卡</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="link" name="" src="">
+                                    <i class="fa fa-gift"></i>礼品管理<i class="fa fa-chevron-down icon-right"></i>
+                                </div>
+                                <ul class="submenu">
+                                    <li class="createCard-active" onclick="window.location.href='giftManage.html'"><a>礼品管理</a></li>
+                                    <li onclick="window.location.href='exchangeManage.html'"><a>兑换管理</a></li>
+                                    <li onclick="window.location.href='manualExchange.html'"><a>人工兑换</a></li>
+                                </ul>                                 
+                            </li>
+                            <li>
+                                <div class="link" name="" src="">
+                                    <i class="fa fa-cogs"></i>跨点设置<i class="fa fa-chevron-down icon-right"></i>
+                                </div>                                
+                            </li>
+                            <li>
+                                <div class="link" name="" src="">
+                                    <i class="fa fa-paw"></i>活动配置<i class="fa fa-chevron-down icon-right"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="link" name="" src="">
+                                    <i class="fa fa-bar-chart"></i>数据报表<i class="fa fa-chevron-down icon-right"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>                     
+        </div>        
+    </div>
+    <script type="text/javascript" src="../../js/common/jquery-1.11.3.min.js"></script>   
+    <script type="text/javascript" src="../../js/plug-in/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../js/upload/webuploader.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../../kindeditor-4.1.10/kindeditor.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../../kindeditor-4.1.10/lang/zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/common/common.js"></script>
+    <script type="text/javascript" src="../../js/business/home/index.js"></script>
+    <script type="text/javascript" src="../../js/upload/picupload.js"></script>
+    <script type="text/javascript" src="../../js/plug-in/datetimepicker/jquery.datetimepicker.js"></script>
+    <script type="text/javascript" src="../../js/plug-in/page/page.js"></script>
+    <script type="text/javascript">
+        KindEditor.ready(function(K) {
+                       K.create('textarea[name="content"]',{
+                        themeType:'simple',
+                        resizeType:1,
+                        allowFileManager:true,
+                        afterBlur:function(){this.sync();}
+                       });
+        });
+        var editor_id=$("#editor_id"); 
+        $(function(){
+            $('.vip-title').hover(function(){
+                $('.vip-desc').toggleClass('show');
+            });
+            $('.member').hover(function(){
+                $(this).find('.vip-details').toggleClass('show');
+            });
+            $('.status').hover(function(){
+                $(this).find('.lock-cause').toggleClass('show');
+            });   
+            $('.lock').click(function(){
+                $('.modal-lock').modal();
+            });    
+            $('.recharge').click(function(){
+                $('.modal-recharge').modal();
+            }); 
+            editor_id.html("aaaaabbbbdfadsfdfdgfadsfdbdfasdfasb");  
+        });       
+        </script>    
+</body>
+
+</html>

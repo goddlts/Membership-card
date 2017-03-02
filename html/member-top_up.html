@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>会员储值</title>
+    <meta content="telephone=no, address=no" name="format-detection">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="stylesheet" href="../css/common/card-common.css">
+    <link rel="stylesheet" type="text/css" href="../css/style_card.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <div class="column">
+                <div class="c-header bd-b-1">
+                    <span class="c1">会员卡号</span>
+                    <span class="cnum">1008 9009 0001</span>
+                </div>
+                <div class="c-content bd-b-1">
+                    <p class="bd-b-1"><span class="ba-txt">当前余额</span><span class="p1-red">¥81690.80</span></p>
+                    <div class="pay-men clearfix">
+                    <div class="f1">请选择储值金额</div>
+                    <div class="f2">
+                    <span class="n1 n1-active">储值100元<br><i>送5元</i></span><span class="n1">储值200元<br><i>送15元</i></span><span class="n1">储值300元<br><i>送30元</i></span><span class="n1">储值500元<br><i>送50元</i></span><span class="n1">储值1000元<br><i>送100元</i></span>
+                    </div>
+                    </div>
+                </div>
+                <div class="member-btn">
+                    <a href="#" class="member-confirm">立即储值</a>
+                    <a href="vip-card.html" class="member-close">取消</a>
+                </div>
+                <div class="footer clearfix">
+                	<div>声明：</div>
+                    <p>点击立即储值，表示您已同意<a href="#">《储值协议》</a>，我们作为技术提供方，无任何履约责任，如有经济纠纷请于商家协商。</p>
+                </div>               
+            </div>
+        </div>
+    </div>
+    <script src="../js/common/zepto.min.js"></script>  
+    <script type="text/javascript" src="../js/common/jquery-1.12.2.min.js"></script>
+    <script>  
+    var $input = $(".fake-box input");  
+     $("#pwd-input").on("input", function() {  
+                    var pwd = $(this).val().trim();  
+                    for (var i = 0, len = pwd.length; i < len; i++) {  
+                        $input.eq("" + i + "").val(pwd[i]);  
+                    }  
+                    $input.each(function() {  
+                        var index = $(this).index();  
+                        if (index >= len) {  
+                            $(this).val("");  
+                        }  
+                    });  
+                    if (len == 6) {  
+                        //执行其他操作  
+                    }  
+                });  
+
+     $(".n1").click(function(event) {
+         $(".n1").removeClass('n1-active');
+         $(this).addClass('n1-active');
+     });
+
+    </script>  
+</body>
+
+</html>

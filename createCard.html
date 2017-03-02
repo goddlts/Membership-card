@@ -1,0 +1,475 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1260px">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>制作会员卡</title>
+    <link rel="stylesheet" href="js/plug-in/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font/icon/font-awesome.min.css" />
+    <link href="css/business/home/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common/common.css">
+    <link rel="stylesheet" href="css/cardCommon.css">
+    <link rel="stylesheet" href="css/createCard.css">
+</head>
+
+<body>
+    <div class="container-fluid container-my">
+        <div class="center-panel row" id="center_panel">
+            <div class="pull-left creditCard">
+                <div class="container-fluid">
+                    <div class="row row-title">卡片制作</div>
+                    <div class="cardBox">
+                        <div class="card-list">
+                            <div class="row clearfix row-create">
+                                <div class="vipBox pull-left">
+                                    <div class="card-bg card-type-3 card-info">
+                                        <div class="card-cont">
+                                            <div class="card-name clearfix">
+                                                <div class="bank">
+                                                    <div class="bank-logo">
+                                                        <img src="images/bank_logo.png" alt="">
+                                                    </div>
+                                                    <div class="bank-name">有米
+                                                        <br>储值卡</div>
+                                                    <div class="bank-qrcode glyphicon glyphicon-qrcode"></div>
+                                                </div>
+                                                <div class="vip-type">
+                                                    <img src="images/vip_type.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="card-number">
+                                                51454564574215375756
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-setting pull-left">
+                                    <div class="basic">
+                                        <h3>基础设置</h3>
+                                        <div class="setBox">
+                                            <div class="clearfix">
+                                                <div class="setLabel pull-left">
+                                                    会员卡名称
+                                                </div>
+                                                <div class="setInfo pull-left">
+                                                    <input type="text" class="form-control input-1" placeholder="如：美味人生会员卡">
+                                                </div>
+                                            </div>
+                                            <div class="clearfix">
+                                                <div class="setLabel pull-left">会员卡背景</div>
+                                                <div class="setInfo pull-left">
+                                                    <button class="btn btn-default">上传图片</button>
+                                                    <span class="upload-tips set-tips">建议图片尺寸（368*234）</span>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix">
+                                                <div class="setLabel pull-left">
+                                                    卡有效期
+                                                </div>
+                                                <div class="setInfo pull-left">
+                                                    <div class="clearfix">
+                                                        <div class="pull-left">
+                                                            <input type="text" class="form-control input-2">
+                                                        </div>
+                                                        <div class="pull-left input-to">-</div>
+                                                        <div class="pull-left">
+                                                            <input type="text" class="form-control input-2">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix">
+                                                <div class="setLabel pull-left">
+                                                    发卡数量
+                                                </div>
+                                                <div class="setInfo pull-left">
+                                                    <input type="text" class="form-control input-2 inline-block" placeholder="1000" id="card-num">
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox" value="option6" id="unlimited">不限
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix">
+                                                <div class="setLabel pull-left">
+                                                    卡密设置
+                                                </div>
+                                                <div class="setInfo pull-left">
+                                                    <button class="btn btn-bordered">无密消费</button>
+                                                    <button class="btn btn-success">有密消费</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="privilege">
+                                        <h3>特权设置</h3>
+                                        <div class="setBox">
+                                            <div class="clearfix">
+                                                <div class="setLabel pull-left">
+                                                    特权类型
+                                                </div>
+                                                <div class="setInfo pull-left">
+                                                    <button class="btn btn-bordered" id="top-up">充值送</button>
+                                                    <button class="btn btn-success" id="discount">充值定折扣</button>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix">
+                                                <div class="setLabel pull-left">
+                                                    特权内容
+                                                </div>
+                                                <div class="setInfo pull-left" id="discount-cont">
+                                                    <div class="pull-left" id="discount-rule">
+                                                        <div class="clearfix rule">
+                                                            <div class="pull-left infoLabel">充值金额&#61;</div>
+                                                            <div class="pull-left">
+                                                                <input type="text" class="form-control set-input" placeholder="500">
+                                                            </div>
+                                                            <div class="pull-left infoLabel">折扣率</div>
+                                                            <div class="pull-left">
+                                                                <input type="text" class="form-control rate-input" placeholder="8.8">
+                                                            </div>
+                                                            <div class="pull-left infoLabel">折</div>
+                                                            <div class="pull-left">
+                                                                <button class="btn btn-warning" id="add-rule">新增规则</button>
+                                                            </div>
+                                                        </div>
+                                                       <!--  <div class="clearfix rule append-rule">
+                                                           <div class="pull-left infoLabel">充值金额&#61;</div>
+                                                           <div class="pull-left">
+                                                               <input type="text" class="form-control set-input" placeholder="500">
+                                                           </div>
+                                                           <div class="pull-left infoLabel">折扣率</div>
+                                                           <div class="pull-left">
+                                                               <input type="text" class="form-control rate-input" placeholder="8.8">
+                                                           </div>
+                                                           <div class="pull-left infoLabel">折</div>
+                                                           <div class="pull-left">
+                                                               <button class="btn btn-danger">删除</button>
+                                                           </div>
+                                                       </div>
+                                                       <div class="clearfix rule append-rule">
+                                                           <div class="pull-left infoLabel">充值金额&#61;</div>
+                                                           <div class="pull-left">
+                                                               <input type="text" class="form-control set-input" placeholder="500">
+                                                           </div>
+                                                           <div class="pull-left infoLabel">折扣率</div>
+                                                           <div class="pull-left">
+                                                               <input type="text" class="form-control rate-input" placeholder="8.8">
+                                                           </div>
+                                                           <div class="pull-left infoLabel">折</div>
+                                                           <div class="pull-left">
+                                                               <button class="btn btn-danger">删除</button>
+                                                           </div>
+                                                       </div> -->
+                                                    </div>
+                                                </div>
+                                                <div class="setInfo pull-left" id="top-up-cont">
+                                                    <div class="pull-left" id="top-up-rule">
+                                                        <div class="clearfix rule">
+                                                        <div class="pull-left">
+                                                            <input type="text" class="form-control set-input1" placeholder="1000">
+                                                        </div>
+                                                            <div class="pull-left infoLabel">≤充值金额≤</div>
+                                                            <div class="pull-left">
+                                                                <input type="text" class="form-control set-input1" placeholder="1000">
+                                                            </div>
+                                                            <div class="pull-left infoLabel">赠送</div>
+                                                            <div class="pull-left">
+                                                                <input type="text" class="form-control set-input1" placeholder="1000">
+                                                            </div>
+                                                            <div class="pull-left">
+                                                                <button class="btn btn-warning" style="width:82px;" id="add-top-rule">新增规则</button>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix">
+                                                <div class="setLabel pull-left pdt1">
+                                                    首充特权
+                                                </div>
+                                                <div class="setInfo pull-left">
+                                                    <div class="radio">
+                                                        <label class="radio-inline radio-first">
+                                                            <input type="radio" name="radio1" id="inlineRadio1" value="option3">不启用
+                                                        </label>
+                                                        <label class="radio-inline">
+                                                            <input type="radio" name="radio1" id="inlineRadio2" value="option4" checked="checked">启用
+                                                        </label>
+                                                    </div>
+                                                    <div class="clearfix cost" id="first-pre">
+                                                        <div class="pull-left infoLabel">首充</div>
+                                                        <div class="pull-left">
+                                                            <input type="text" class="form-control set-input" placeholder="100">
+                                                        </div>
+                                                        <div class="pull-left infoLabel">赠送</div>
+                                                        <div class="pull-left infoLabel set-tips" id="input-gift">
+                                                             <input type="text" class="form-control set-input2" placeholder="赠品">
+                                                        </div>
+                                                        <div class="pull-left infoLabel set-tips" style="display:none;" id="input-sum">
+                                                             <input type="text" class="form-control set-input1 inline-block" value="10">
+                                                             元
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix">
+                                                <div class="setLabel pull-left pdt1">
+                                                    积分规则
+                                                </div>
+                                                <div class="setInfo pull-left">
+                                                    <div class="radio">
+                                                        <label class="radio-inline radio-first">
+                                                            <input type="radio" name="radio2" id="inlineRadio3" value="option1">不启用
+                                                        </label>
+                                                        <label class="radio-inline">
+                                                            <input type="radio" name="radio2" id="inlineRadio4" value="option2" checked="checked">启用
+                                                        </label>
+                                                    </div>
+                                                    <div class="clearfix cost" id="integral-rule">
+                                                        <div class="pull-left infoLabel">消费</div>
+                                                        <div class="pull-left">
+                                                            <input type="text" class="form-control set-input" placeholder="10">
+                                                        </div>
+                                                        <div class="pull-left infoLabel">元积累<span class="integral-num">1</span>积分</div>
+                                                        <div class="pull-left infoLabel set-tips">注：余数部分不计入积分</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix">
+                                                <div class="setLabel pull-left pdt1">
+                                                    特权是否共享
+                                                </div>
+                                                <div class="setInfo pull-left">
+                                                    <div class="radio">
+                                                        <label class="radio-inline radio-first">
+                                                            <input type="radio" name="radio3" value="option1">不共享
+                                                        </label>
+                                                        <label class="radio-inline">
+                                                            <input type="radio" name="radio3" value="option2" checked="checked">可共享
+                                                        </label>
+                                                        <label class="set-tips">与店内其他活动是否可以一起享受</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix pdt1">
+                                                <div class="setLabel pull-left pdt1">
+                                                    特权说明
+                                                </div>
+                                                <div class="setInfo pull-left">
+                                                    <textarea class="form-control" rows="5"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="others">
+                                        <h3>其他设置</h3>
+                                        <div class="setBox">
+                                            <div class="clearfix">
+                                                <div class="setLabel pull-left">
+                                                    领卡设置
+                                                </div>
+                                                <div class="setInfo pull-left">
+                                                    <label class="radio-inline radio-first">
+                                                        <input type="radio" name="radio4" value="option1" id="inlineRadio5">免费领取
+                                                    </label>
+                                                    <label class="radio-inline">
+                                                        <input type="radio" name="radio4" value="option2" checked="checked" id="inlineRadio6">付费领取
+                                                    </label>
+                                                    <div class="radio-inline radio-input" style="padding-left: 0;">
+                                                        <input type="text" class="form-control" placeholder="100000.00">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix">
+                                                <div class="setLabel pull-left">
+                                                    使用门店
+                                                </div>
+                                                <div class="setInfo pull-left">
+                                                    <div class="checkbox">
+                                                        <label class="checkbox-inline">
+                                                            <input type="checkbox" value="option1">桔橙1号店
+                                                        </label>
+                                                        <label class="checkbox-inline">
+                                                            <input type="checkbox" value="option2">桔橙2号店
+                                                        </label>
+                                                        <label class="checkbox-inline">
+                                                            <input type="checkbox" value="option3">桔橙3号店
+                                                        </label>
+                                                        <label class="checkbox-inline">
+                                                            <input type="checkbox" value="option4">桔橙4号店
+                                                        </label>
+                                                        <label class="checkbox-inline">
+                                                            <input type="checkbox" value="option5">桔橙5号店
+                                                        </label>
+                                                        <label class="checkbox-inline">
+                                                            <input type="checkbox" value="option6">桔橙6号店
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="set-tips" style="padding-left: 36px;">温馨提示：发放的每张卡片请本着诚信经营的原则承兑，出现任何纠纷与平台无关。</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="save text-center">
+                                        <!-- <button class="btn btn-orange">保存并预览</button> -->
+                                        <a class="btn btn-orange" href="creditCard.html">保存并预览</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-left col-left-bg"></div>
+            </div>
+            <div class="col-left pull-left col-left-content">
+                <div class="menu list-1">
+                    <div class="title vip-title">
+                        <span class="credit-card-icon"></span>
+                        <span>会员卡</span>
+                        <span class="info-icon"></span>
+                        <div class="vip-desc">
+                            <h2>会员卡玩法</h2>
+                            <ol>
+                                <li>储值卡（支持储值分层赠送与根据储值金额匹配、折扣权益二种营销方式）</li>
+                                <li>礼品卡</li>
+                                <li>积分卡（积印花、积分）</li>
+                                <li>次数卡（可自定义卡片的服务项目）</li>
+                                <li>权益升级卡（同于星巴克会员卡模式）</li>
+                                <li>固定权益卡（如五折卡）</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="menu-conent">
+                        <ul id="accordion5" class="accordion">
+                            <li>
+                                <div class="link" name="" src="">
+                                    <i class="fa fa-cog"></i>基础管理<i class="fa fa-chevron-down icon-right"></i>
+                                </div>
+                                <ul class="submenu" style="display: none;">
+                                    <!-- <li><span name="">卡片制作</span></li>
+                                    <li><span name="">卡片推广</span></li>
+                                    <li><span name="">卡片管理</span></li>
+                                    <li><span name="">卡使用记录</span></li>
+                                    <li><span name="">历史发卡</span></li> -->
+                                    <li><a href="createCard.html">卡片制作</a></li>
+                                    <li><a href="cardSpread.html">卡片推广</a></li>
+                                    <li><a href="cardManage.html">卡片管理</a></li>
+                                    <li><a href="cardUsedRecord.html">卡使用记录</a></li>
+                                    <li><a href="cardHistoryRecord.html">历史发卡</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="link" name="" src="">
+                                    <i class="fa fa-gift"></i>礼品管理<i class="fa fa-chevron-down icon-right"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="link" name="" src="">
+                                    <i class="fa fa-cogs"></i>跨点设置<i class="fa fa-chevron-down icon-right"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="link" name="" src="">
+                                    <i class="fa fa-paw"></i>活动配置<i class="fa fa-chevron-down icon-right"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="link" name="" src="">
+                                    <i class="fa fa-bar-chart"></i>数据报表<i class="fa fa-chevron-down icon-right"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/common/jquery-1.12.2.min.js"></script>
+        <script src="js/plug-in/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+        //删除操作
+        function deltr(num) {
+            $("#top-up-rule").find("#" + num).remove();
+        }
+        function deltr2(num) {
+            $("#discount-rule").find("#" + num).remove();
+        }
+        $(function() {
+            $('.vip-title').hover(function() {
+                $('.vip-desc').toggleClass('show');
+            });
+            var old1 = null; //用来保存原来的对象  
+            $("#unlimited").each(function() { //循环绑定事件  
+                if (this.checked) {
+                    old1 = this; //如果当前对象选中，保存该对象  
+
+                }
+                this.onclick = function() {
+                    if (this == old1) { //如果点击的对象原来是选中的，取消选中  
+                        this.checked = false;
+                        old1 = null; //取消选中触发
+                        $("#card-num").attr('placeholder', '1000');
+                        $("#card-num").removeAttr('disabled');
+                    } else {
+                        old1 = this; //点击选中触发
+                        $("#card-num").attr('placeholder', '0');
+                        $("#card-num").attr('disabled', true);
+                    }
+                }
+            });
+            $("#inlineRadio1").on('click',function(){
+            	$("#first-pre").hide();
+            });
+            $("#inlineRadio2").on('click',function(){
+            	$("#first-pre").show();
+            });
+            $("#inlineRadio3").on('click',function(){
+            	$("#integral-rule").hide();
+            });
+            $("#inlineRadio4").on('click',function(){
+            	$("#integral-rule").show();
+            });
+             $("#inlineRadio5").on('click',function(){
+            	$(".radio-input").css("visibility","hidden");
+            });
+             $("#inlineRadio6").on('click',function(){
+             	$(".radio-input").css("visibility","visible");
+             });
+            $("#top-up").on('click',function(){
+            	$("#top-up").removeClass('btn-bordered').addClass('btn-success');
+            	$("#discount").removeClass('btn-success').addClass('btn-bordered');
+            	$("#discount-cont").hide();
+            	$("#top-up-cont").show();
+            	$("#input-sum").show();
+            	$("#input-gift").hide();
+            });
+            $("#discount").on('click',function(){
+            	$("#top-up").removeClass('btn-success').addClass('btn-bordered');
+            	$("#discount").removeClass('btn-bordered').addClass('btn-success');
+            	$("#top-up-cont").hide();
+            	$("#discount-cont").show();
+            	$("#input-sum").hide();
+            	$("#input-gift").show();
+            });
+            var rowNum = 0;
+            $("#add-top-rule").click(function() {
+                rowNum += 1;
+                var $allspan = $("<div class='clearfix rule append-rule rechargeNumber' id='" + rowNum + "'><div class='pull-left'><input type='text' class='form-control set-input1 minamountlist' id='minRecharge"+rowNum+"' placeholder='500'></div><div class='pull-left infoLabel'>≤充值金额≤</div><div class='pull-left'><input type='text' class='form-control set-input1 maxamountlist' id='maxRecharge"+rowNum+"' placeholder='1000'></div><div class='pull-left infoLabel'>赠送</div><div class='pull-left'><input type='text' class='form-control set-input1 sendamountlist' id='giftRecharge"+rowNum+"' placeholder='100'></div><div class='pull-left'><button class='btn btn-danger' style='width:82px;' onclick='deltr(" + rowNum + ")'>删除</button></div></div>  ");
+                $("#top-up-rule").append($allspan);
+            }); 
+            var rowNum2 = 0;
+            $("#add-rule").click(function() {
+                rowNum2 += 1;
+                var $allspan = $(" <div class='clearfix rule append-rule discountRecharge' id='" + rowNum2 + "'><div class='pull-left infoLabel'>充值金额=</div><div class='pull-left'><input type='text' class='form-control set-input amountOfCharge' id='amountDiscount"+rowNum2+"' placeholder='500'></div><div class='pull-left infoLabel'>折扣率</div><div class='pull-left'><input type='text' class='form-control rate-input discountlist' id='rateDiscount"+rowNum2+"' placeholder='8.8'></div><div class='pull-left infoLabel'>折</div><div class='pull-left'><button class='btn btn-danger' onclick='deltr2(" + rowNum2 + ")'>删除</button></div></div>  ");
+                $("#discount-rule").append($allspan);
+            }); 
+           });
+        </script>
+        <script type="text/javascript" src="js/common/common.js"></script>
+        <script type="text/javascript" src="js/business/home/index.js"></script>
+</body>
+
+</html>

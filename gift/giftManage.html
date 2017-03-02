@@ -1,0 +1,232 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1260px">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>礼品管理</title>
+    <link rel="stylesheet" href="../../js/plug-in/bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../font/icon/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../../css/business/home/index.css"/>
+    <link rel="stylesheet" href="../../css/common/common.css"/>
+    <link rel="stylesheet" href="../../css/cardCommon.css"/>
+    <link rel="stylesheet" href="../../css/gift/giftCommon.css"/>
+</head>
+
+<body>   
+    <div class="container-fluid container-my">
+        <div class="center-panel row" id="center_panel">
+            <div class="pull-left creditCard">
+                <div class="container-fluid">
+                    <div class="row row-title">礼品管理</div>                    
+                    <div class="rowBox">
+                        <div class="row search">
+                            <div class="form-inline">
+                                <div class="form-group marginRight20">
+                                    <input type="text" class="form-control" placeholder="礼品名称"/>
+                                </div>
+                                <div class="form-group marginRight20">
+                                    <input type="text" class="form-control" placeholder="推广渠道名"/>
+                                </div>
+                                <div class="form-group marginRight20">
+                                    <select class="form-control" style="width:179px">
+                                        <option>礼品用途</option>
+                                        <option>积分兑换</option>
+                                        <option>附属赠礼</option>
+                                    </select>
+                                </div>  
+                                <div class="form-group ">
+                                    <select class="form-control marginRight10">
+                                        <option>状态</option>
+                                        <option>已上架</option>
+                                        <option>暂存</option>
+                                        <option>已下架</option>
+                                    </select>
+                                </div>                                
+                                <button class="btn btn-warning gift-search">查询</button>
+                                <button class="btn btn-success" onclick="window.location.href='addGift.html'">礼品新增</button>
+                            </div> 
+                        </div> 
+                        <div class="row row-table">
+                            <table class="table common-table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th>礼品图</th>
+                                        <th>礼品名称</th>
+                                        <th>礼品用途</th>
+                                        <th>礼品类型</th>
+                                        <th>礼品总数/库存数</th>
+                                        <th>所需积分</th>
+                                        <th>状态</th>
+                                        <th>上/下架时间</th>
+                                        <th>操作</th>
+                                    </tr> 
+                                    <tr>
+                                        <td> 
+                                        <img class="gift-img" src="../../images/front/picture.png" alt="">
+                                        </td>
+                                        <td>聚美优品</td>
+                                        <td>积分兑换</td>
+                                        <td>实物</td>
+                                        <td>1000/<span class="col-red">365</span></td>
+                                        <td>300</td>
+                                        <td class="col-red">已上架</td>
+                                        <td>
+                                            2016-11-25<br/>16:55
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-link lock">下架</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td> 
+                                        <img class="gift-img" src="../../images/front/picture.png" alt="">
+                                        </td>
+                                        <td>聚美优品</td>
+                                        <td>附属赠品</td>
+                                        <td>虚拟物品</td>
+                                        <td>1000/<span class="col-red">365</span></td>
+                                        <td>590</td>
+                                        <td>暂存</td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-link lock">编辑</button>
+                                            <button class="btn btn-link lock">删除</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td> 
+                                        <img class="gift-img" src="../../images/front/picture.png" alt="">
+                                        </td>
+                                        <td>聚美优品</td>
+                                        <td>积分兑换</td>
+                                        <td>实物</td>
+                                        <td>1000/<span class="col-red">365</span></td>
+                                        <td>300</td>
+                                        <td>已下架</td>
+                                        <td>
+                                            2016-11-25<br/>16:55
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-link lock">上架</button>
+                                        </td>
+                                    </tr>
+                                   
+                                   
+                                   
+                                   
+                                                             
+                                </tbody>
+                            </table>
+                           <div class="col-sm-12 col-table-page">
+                                <nav>
+                                    <ul class="pagination  ">
+                                        <li><a class="firstPage" href="#">首页</a></li>
+                                        <li><a class="prevPage" href="#">上一页</a></li>
+                                        <li class="active"><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a class="nextPage" href="#">下一页</a></li>
+                                        <li><a class="lastPage" href="#">末页</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>  
+            <div class="col-left col-left-bg"></div>
+            <div class="col-left pull-left col-left-content">              
+                <div class="menu list-1">
+                    <div class="title vip-title">
+                        <span class="credit-card-icon"></span>
+                        <span>会员卡</span>
+                        <span class="info-icon"></span>
+                        <div class="vip-desc">
+                            <h2>会员卡玩法</h2>
+                            <ol>
+                                <li>储值卡（支持储值分层赠送与根据储值金额匹配、折扣权益二种营销方式）</li>
+                                <li>礼品卡</li>
+                                <li>积分卡（积印花、积分）</li>
+                                <li>次数卡（可自定义卡片的服务项目）</li>
+                                <li>权益升级卡（同于星巴克会员卡模式）</li>
+                                <li>固定权益卡（如五折卡）</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="menu-conent">
+                        <ul id="accordion5" class="accordion">
+                            <li>
+                                <div class="link" name="" src="">
+                                    <i class="fa fa-cog"></i>基础管理<i class="fa fa-chevron-down icon-right"></i>
+                                </div>
+                                <ul class="submenu" style="display:none">
+                                    <li onclick="window.location.href='/login!index.do'"><a>卡片制作</a></li>
+                                    <li onclick="window.location.href='/card!memberCardSpread.do'"><a>卡片推广</a></li>
+                                    <li onclick="window.location.href='/card!memberCardManageInfo.do'"><a>卡片管理</a></li>
+                                    <li onclick="window.location.href='/card!cardUsedRecord.do'"><a>卡使用记录</a></li>
+                                    <li onclick="window.location.href='/card!historicalHairpin.do'"><a>历史发卡</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="link" name="" src="">
+                                    <i class="fa fa-gift"></i>礼品管理<i class="fa fa-chevron-down icon-right"></i>
+                                </div>
+                                <ul class="submenu">
+                                    <li class="createCard-active" onclick="window.location.href='giftManage.html'"><a>礼品管理</a></li>
+                                    <li onclick="window.location.href='exchangeManage.html'"><a>兑换管理</a></li>
+                                    <li onclick="window.location.href='manualExchange.html'"><a>人工兑换</a></li>
+                                </ul>                                
+                            </li>
+                            <li>
+                                <div class="link" name="" src="">
+                                    <i class="fa fa-cogs"></i>跨点设置<i class="fa fa-chevron-down icon-right"></i>
+                                </div>                                
+                            </li>
+                            <li>
+                                <div class="link" name="" src="">
+                                    <i class="fa fa-paw"></i>活动配置<i class="fa fa-chevron-down icon-right"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="link" name="" src="">
+                                    <i class="fa fa-bar-chart"></i>数据报表<i class="fa fa-chevron-down icon-right"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>                     
+        </div>        
+    </div>
+    <script type="text/javascript" src="../../js/common/jquery-1.11.3.min.js"></script>   
+    <script type="text/javascript" src="../../js/plug-in/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../js/common/common.js"></script>
+    <script type="text/javascript" src="../../js/business/home/index.js"></script>
+    <script type="text/javascript" src="../../js/plug-in/page/page.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('.vip-title').hover(function(){
+                $('.vip-desc').toggleClass('show');
+            });
+            $('.member').hover(function(){
+                $(this).find('.vip-details').toggleClass('show');
+            });
+            $('.status').hover(function(){
+                $(this).find('.lock-cause').toggleClass('show');
+            });   
+            $('.lock').click(function(){
+                $('.modal-lock').modal();
+            });    
+            $('.recharge').click(function(){
+                $('.modal-recharge').modal();
+            });      
+        });       
+        </script>    
+</body>
+
+</html>

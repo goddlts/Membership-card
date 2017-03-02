@@ -1,0 +1,129 @@
+.cardBox{
+    padding: 30px 30px 30px 41px;
+}
+.cardBox .card-item{
+    width: 33.33%;
+    padding-bottom: 103px; 
+    position: relative;
+}
+
+.publish-card,.bank-card,.card-control{
+    text-align: center;
+}
+.publish-card .publish,.bank-card .bank-name{
+    color: #a0a0a0;    
+    width: 148px;
+    margin: 22px auto 0 auto;
+    border: 1px solid transparent;
+    font-size: 18px;
+    height: 31px;
+    line-height: 31px;
+}
+.bank-card .bank-name,.publish-card .pactive{
+    color: #ff6000;
+}
+.publish-card .pactive{
+    cursor: pointer;    
+    background: #f8f8f8;
+    border: 1px solid #dbdbdb;
+}
+
+.card-control{
+    position: absolute;
+}
+.card-control div{
+    width: 33.33%;
+    float: left;
+    cursor: pointer;
+}
+.card-control div:first-child{
+    border-right: 1px solid #dedede;
+}
+.card-control div:last-child{
+    border-left: 1px solid #dedede;
+}
+.modal-promote .source-name{
+    margin-top: 8px;
+    margin-bottom: 25px;
+}
+.modal-promote .promote-store{
+    margin-bottom: 40px;
+}
+
+.modal .offline-body{
+    text-align: center;
+}
+.offline-body .text-left{
+    margin-top: 24px;
+    margin-bottom: 29px;
+    color: #000;
+}
+.offline-body .text-left a{
+    color: #ff6000;
+}
+.card-details ul li{
+    line-height: 1.7;
+}
+.card-details ul li span{
+    float: right;
+}
+.card-details h4{
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid #e3e7ea;
+    padding-bottom: 12px;
+    margin-top: 0;
+}
+.vipBox{
+    position: relative;
+}
+.vipBox>div{
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d; 
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+
+    transition: .8s ease-in-out;
+    -ms-transition: .8s ease-in-out;
+    -webkit-transition: .8s ease-in-out;
+    -moz-transition: .8s ease-in-out;
+
+    backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+}
+.vipBox>div:first-child {
+    transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    z-index: 2;
+}
+.vipBox>div:last-child {
+    transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    z-index: 1;
+}
+.vipBox:hover div:first-child{
+    transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    opacity: 0;
+}
+
+.vipBox:hover div:last-child{
+    transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    opacity: 1;
+}

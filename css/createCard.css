@@ -1,0 +1,122 @@
+.row-create{
+    padding-top: 30px;
+    margin-bottom: 86px;
+}
+
+.card-setting{
+    background-color: #ededed;
+    border-radius: 3px;    
+    margin-left: 10px;
+    margin-right: 27px;
+    width: 652px;
+    padding: 20px 18px 0 18px;    
+}
+.card-setting > div{
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 2px 25px 22px 25px;
+}
+.card-setting > div h3{
+    color: #555;
+}
+.setBox > div{
+    margin-top: 15px;
+}
+.setLabel{
+    width: 97px;
+    margin-right: 38px;
+    text-align: right;
+}
+.input-to,.setLabel,.infoLabel{    
+    height: 34px;
+    line-height: 34px;
+}
+.upload-tips{
+    margin-left: 10px;
+}
+.set-tips{
+    color: #999;
+}
+.input-1{
+    width: 364px;
+}
+.input-2{
+    width: 188px;
+}
+.input-to{
+    width: 14px;
+    text-align: center;
+}
+.btn-bordered{
+    border: 1px solid #4cae4c;
+    background-color: #fff;
+}
+.btn-bordered,.btn-bordered:hover,.btn-bordered:focus{
+    color: #5cb85c;
+}
+.set-input,.rule .btn{
+    width: 92px;
+}
+.rate-input{
+    width: 50px;
+}
+.rule > div,.cost > div{
+    margin-right: 10px;
+}
+.append-rule{
+    margin-top: 15px;
+}
+.setInfo .radio,.setInfo .checkbox{
+    margin-top: 7px;
+}
+.setInfo .radio-first{
+    margin-right: 33px;
+}
+.setInfo textarea,.setInfo .checkbox{
+    width: 430px;
+}
+.setInfo textarea{
+    max-width: 430px;
+}
+.checkbox label.checkbox-inline{
+    margin-bottom: 28px;    
+    margin-right: 20px;  
+}
+.checkbox-inline+.checkbox-inline{
+    margin-left: 0px;  
+}
+.card-setting > div.save{
+    background: none;
+}
+.btn-orange{    
+    background-color: #ff6000;
+}
+.btn-orange,.btn-orange:hover,.btn-orange:focus{
+    color: #fff;
+}
+.btn-orange:hover,.btn-orange:focus{
+    background-color:#a55321;
+}
+.inline-block{
+    display: inline-block;
+}
+.pdt1{
+    padding-top: 1px;
+}
+.integral-num{
+    color: #f00;
+    margin-right: 4px;
+    margin-left: 4px;
+}
+.set-input1{
+    width: 60px;
+}
+.set-input2{
+    width: 150px;
+}
+.rule1{
+    width: 82px;
+}
+#top-up-cont{
+    display: none;
+}
